@@ -1,0 +1,85 @@
+/* Styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for match cards */
+  .match-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual match card */
+  .match-card {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Home and away team names */
+  .match-card .team-name {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  /* Score display */
+  .match-card .score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    min-width: 60px;
+    margin-top: 5px;
+  }
+  
+  /* Styling for team names on left and right sides */
+  .match-card .home-team {
+    flex-grow: 1;
+    text-align: left;
+    padding-right: 15px;
+  }
+  
+  .match-card .away-team {
+    flex-grow: 1;
+    text-align: right;
+    padding-left: 15px;
+  }
+  
+  /* Heading for the matches */
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading message */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
