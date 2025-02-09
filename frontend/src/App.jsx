@@ -8,10 +8,8 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ paddingTop: "70px" }}>
-        {activeTab === "matches" ? <Matches /> : <ESPNNews />}
-      </div>
-      
+
+            
       <nav className="menu">
         <button
           className={activeTab === "matches" ? "active" : ""}
@@ -27,6 +25,9 @@ function App() {
         </button>
       </nav>
 
+      <div style={{ paddingTop: "70px" }}>
+        {activeTab === "matches" ? <Matches /> : <ESPNNews />}
+      </div>
       {/* Add padding-top to avoid content being hidden under the fixed nav */}
     </div>
   );
